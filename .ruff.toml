@@ -46,7 +46,8 @@ ignore = [
 preview = true
 
 [lint.isort]
-known-first-party = ["daft"]
+known-first-party = ["daft_ext_template"]
+known-third-party = ["daft"]
 required-imports = ["from __future__ import annotations"]
 
 [lint.per-file-ignores]

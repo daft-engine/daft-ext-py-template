@@ -2,12 +2,14 @@
 
 - https://docs.daft.ai for the user-facing API docs for Daft
 - https://docs.daft.ai/en/stable/extensions/authoring/ for writing Daft extensions
+- - https://docs.daft.ai/en/stable/api/udf/ for `@daft.func`, `@daft.cls`, and `@daft.udaf`
+
 
 # Dev Workflow
 
 1. Set up Python environment, install dependencies, and build dev package: `uv sync`
 2. Activate .venv: `source .venv/bin/activate`
-3. If Rust code is modified, rebuild: `make build`
+3. Run tests: `uv run pytest tests/ -v`
 
 # PR Conventions
 
