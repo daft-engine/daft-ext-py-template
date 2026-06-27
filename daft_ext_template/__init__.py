@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import daft
 
+
 @daft.func
 def greet(name: str | None) -> str | None:
     """Greet someone by name."""

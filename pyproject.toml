@@ -3,25 +3,24 @@ requires = ["hatchling", "hatch-vcs"]
 build-backend = "hatchling.build"
 
 [project]
-name = "daft-ext-template"      # Choose a name for the package!
-description = "..."             # Add a description for the package
+name = "daft-ext-template"  # Choose a name for the package!
+description = "..."  # Add a description for the package
 dependencies = ["daft>=0.7.5"]  # Add additional dependencies here
 dynamic = ["version"]
 license = "Apache-2.0"
-authors = []                    # Add authors, especially if it differs from maintainers
-maintainers = []                # Add maintainers
+authors = []  # Add authors, especially if it differs from maintainers
+maintainers = []  # Add maintainers
 readme = "README.md"
 requires-python = ">=3.10,<3.14"
 
 [project.urls]
-# repository = ""               # Add a repository URL for the package
 
 [dependency-groups]
 dev = [
   "pre-commit==4.6.0",
   "pytest==9.1.1",
   "ruff==0.15.20",
-  "mypy==2.1.0",
+  "mypy==2.1.0"
 ]
 
 [tool.hatch.version]
