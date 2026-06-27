@@ -29,3 +29,7 @@ See the [Extensions overview](https://docs.daft.ai/en/stable/extensions/overview
 ## Versioning
 
 Versions are derived from git tags via `hatch-vcs`. Tag releases as `v0.1.0`, `v0.2.0`, etc.
+
+## Publishing
+
+Publishing a GitHub release triggers `.github/workflows/publish-package.yml`, which builds a wheel and sdist with `uv build` and uploads both to PyPI via [trusted publishing](https://docs.pypi.org/trusted-publishers/). Configure the trusted publisher on PyPI for this repository before your first release.
